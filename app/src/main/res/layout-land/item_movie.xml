@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
@@ -13,13 +14,22 @@
         android:layout_marginTop="0dp"
         tools:srcCompat="@tools:sample/avatars" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/black" />
+
+
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="@font/sono"
+        android:textColor="#000000"
         android:textSize="24sp"
+        android:textStyle="bold"
         tools:text="Fast Furious Presents: Hobbs Shaw" />
 
     <TextView
@@ -32,5 +42,6 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="25dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:textColor="#000000"
         tools:text="Spin off of the fate of the furious. Focusing on johnson US diplomatic agent Luke Hobbs" />
 </RelativeLayout>
